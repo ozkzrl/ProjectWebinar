@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webinar Platform</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.user-actions a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+nav {
+    background-color: #444;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: -450px; /* Move the content up by 450px */
+}
+
+.webinar-stream {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.webinar-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.webinar-item {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .user-actions {
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+        margin-top: -400px; /* Adjust margin for smaller screens */
+    }
+
+    .webinar-stream {
+        padding: 10px;
+    }
+
+    .webinar-item {
+        padding: 10px;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .user-actions a {
+        margin-left: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    main {
+        margin-top: -350px; /* Adjust margin for smaller screens */
+    }
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">LOGO</div>
+        <div class="user-actions">
+            <a href="#">Logon</a>
+            <a href="#">Login</a>
+            <a href="#">Signin</a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Webarama2.html">Search Webinar</a></li>
+            <li><a href="#">Save Webinar</a></li>
+            <li><a href="#">Delete Webinar</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="webinar-stream">
+            <h2>Webinars</h2>
+            <div class="webinar-list">
+                <!-- Webinars will be listed here -->
+                <div class="webinar-item">Webinar 1</div>
+                <div class="webinar-item">Webinar 2</div>
+                <div class="webinar-item">Webinar 3</div>
+                <!-- More webinars can be added here -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Webinar Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>
